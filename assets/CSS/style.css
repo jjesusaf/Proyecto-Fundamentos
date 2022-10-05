@@ -1,0 +1,327 @@
+
+
+
+/**-----------------PRIMEROS ELEMENTOS-------------------**/
+
+
+
+*{
+    background-color: var(--color--5);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color--1: #FEF2F2;
+    --color--2: #F26440;
+    --color--3: #286F6C;
+    --color--4: #ADADAD;
+    --color--5: #FFFFFF;
+    --color--6: #f9f5f2;
+}
+
+
+
+
+/**----------------BARRA DE NAVEGACION------------------**/
+
+
+
+
+nav{
+    width: auto;
+    height: auto;
+    background-color: var(--color--1);
+}
+
+ul.barra-nav{
+    display: flex;
+    margin: 0;
+    margin-right: 7rem;
+    padding: 1rem;
+    list-style: none;
+    background-color: var(--color--1);
+    gap: 3rem;
+    justify-content: flex-end;
+    
+}
+
+li.indice{
+    margin-right: 1rem;
+    background-color: var(--color--1);
+    color: var(--color--4);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+
+li.indice:hover{
+    color: var(--color--3);
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 5px 20px rgb(235, 233, 233);
+}
+
+
+
+
+
+
+/**--------------------PRIMER BLOQUE---------------------**/
+
+
+
+
+        /*Contendor principal*/
+
+header.contenedor1{
+    display: grid;
+    padding: 1rem;
+    padding-bottom: 4.5rem;
+    height: auto;
+    background-color: var(--color--1);
+    box-sizing: border-box;
+    grid-template-columns: 1.4fr 2fr;
+}
+
+        /*Objetos del primer(1) elemento incluido este*/
+
+div.c1elementos1{
+    display: inline-block;
+    margin: 1rem;
+    padding: 5rem;
+    padding-left: 7rem;
+    width: auto;
+    height: auto;
+    background-color: var(--color--1);
+
+}
+
+div.c1elementos1>p.titulo{
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color--1);
+
+}
+
+div.c1elementos1>div.iconos{
+    display: flex;
+    gap: 2rem;
+    margin-top: .5rem;
+    background-color: var(--color--1);
+    
+}
+
+div.c1elementos1>div.iconos>span.contorno>span{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: .8rem;
+    margin: 5px;
+    background-color: var(--color--2);
+    border-radius: 100%;
+}
+
+div.c1elementos1>div.iconos>span.contorno>span>img{
+    background-color: var(--color--2);
+    width: 38px;
+    height: auto;
+}
+
+div.c1elementos1>div.iconos>span.contorno{
+    border-radius: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+        /*Objetos del segundo(2) elemento incluido este*/
+
+div.c1elementos2{
+    background-color: var(--color--1);
+    display: flex;  
+    height: auto;
+}
+
+div.circulo-verde{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    background-color: var(--color--3);
+}
+
+div.imagen1{
+    position: absolute;
+    background-color: transparent;
+    
+}
+div.imagen1>img{
+    position: relative;
+    background-color: transparent;
+    width: auto;
+    left: 100px;
+    top: 20px;
+}
+
+/**-------------------SEGUNDO BLOQUE---------------------**/
+
+
+        /*Contendor principal*/
+
+div.contenedor2{
+    display: grid;
+    padding: 1rem;
+    height: auto;
+    background-color: var(--color--5);
+    box-sizing: border-box;
+    grid-template-rows: auto auto auto;
+}  
+
+
+/*Objetos del primer(1) elemento incluido este*/
+
+
+div.contenedor2>div.c2elementos1{
+    grid-row: 1;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin-left: 14%;
+    margin-right: 14%;
+    background-color: var(--color--5);
+}
+
+div.contenedor2>div.c2elementos1>div.acerca-de1{
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--color--3);
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+div.contenedor2>div.c2elementos1>div.acerca-de2{
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--color--4);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+
+
+/*Objetos del segundo(2) elemento incluido este*/
+
+
+
+div.contenedor2>div.c2elementos2{
+    grid-row: 2;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding-top: 1rem;
+}
+
+div.contenedor2>div.c2elementos2>div.circulo-verde{
+    position: absolute;
+    width: 610px;
+    height: 610px;
+    border-radius: 100%;
+    background-color: var(--color--3);
+
+}
+
+div.contenedor2>div.c2elementos2>div.circulo-naranja{
+    position: relative;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: var(--color--2);
+}
+
+div.contenedor2>div.c2elementos2>div.texto1-elemento2{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: var(--color--5);
+    bottom: 60px;
+    left: 15rem;
+    z-index: 1;
+
+}
+
+div.contenedor2>div.c2elementos2>div.texto1-elemento2>p{
+    background-color: transparent;
+}
+
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad{
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    justify-content: space-between;
+    height: auto;
+    margin-left: 14%;
+    margin-right: 14%;
+    gap: 4rem;
+    bottom: 30px;
+    left: 45px;
+}
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div{
+    background-color: var(--color--1);
+    width: auto;
+    height: auto;
+    border-radius: 2%;
+
+}
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>h3{
+    display: inline-block;
+    background-color: var(--color--1);
+    padding: 5px;
+    margin: 5px;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+  
+}
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>p{
+    display: inline-block;
+    background-color: var(--color--1);
+    padding: 5px;
+    margin: 5px;
+    padding-bottom: 30px;
+    padding-top: 1p;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--color--4);
+  
+}
+
+div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>h3>img{
+    padding-right: 4px;
+    background-color: transparent;
+}
+
+
+
+
