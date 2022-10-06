@@ -367,7 +367,7 @@ div.contenedor2>div.c2elementos2{
     padding-top: 1rem;
 }
 
-div.contenedor2>div.c2elementos2>div.circulo-verde{
+div.contenedor2>div.c2elementos2>div.circulo-verde2{
     display: inline-block;
     position: absolute;
     box-sizing: border-box;
@@ -375,7 +375,6 @@ div.contenedor2>div.c2elementos2>div.circulo-verde{
     height: 610px;
     border-radius: 100%;
     background-color: var(--color--3);
-
 }
 
 div.contenedor2>div.c2elementos2>div.circulo-naranja{
@@ -533,8 +532,21 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
         width: auto;
         box-sizing: border-box;
         justify-content: center;
+        margin: 1rem 1rem;
+        padding: auto;
         
         
+    }
+
+    div.contenedor2>div.c2elementos1>div.acerca-de1{
+        font-size: 32px;
+        margin: 1rem 1rem;
+    }
+
+    div.contenedor2>div.c2elementos1>div.acerca-de2{
+        font-size: 16px;
+        margin: 1rem 1rem; 
+
     }
 
     div.contenedor2>div.c2elementos2{
@@ -544,15 +556,19 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
 
     }
 
-    div.contenedor2>div.c2elementos2>div.circulo-verde{
+    div.contenedor2>div.c2elementos2>div.circulo-verde2{
         width: 200px;
         height: 200px;
 
     }
 
     div.contenedor2>div.c2elementos2>div.circulo-naranja{
+        position: relative;
+        top: 0;
+        bottom: 0;
         width: 100px;
         height: 100px;
+
 
     }
 
@@ -564,6 +580,7 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
     div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad{
         display: inline-block;
         position: relative;
+        padding: .5rem 1rem;
         top: 2rem;
         bottom: 0;
         left: 0;
@@ -587,6 +604,7 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
         bottom: 20px;
         left: 7rem;
         z-index: 1;
+        padding-right: 10px;
     
     }
 
