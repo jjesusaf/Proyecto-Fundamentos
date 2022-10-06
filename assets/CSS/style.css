@@ -63,7 +63,9 @@ li.indice:hover{
     box-shadow: 5px 5px 20px rgb(235, 233, 233);
 }
 
+@media screen and ( max-width: 678px ){
 
+}
 
 
 
@@ -165,18 +167,36 @@ div.imagen1>img{
     top: 20px;
 }
 
+
+@media screen and ( max-width: 600px ){
+    
+    header.contenedor1{
+        display: inline-block;
+        max-width: 600px;
+    }
+
+    div.c1elementos1{
+        max-width: 600;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    div.c1elementos1>p.titulo{
+        text-align: center;
+    }
+}
+
 /**-------------------SEGUNDO BLOQUE---------------------**/
 
 
         /*Contendor principal*/
 
 div.contenedor2{
-    display: grid;
+    display: inline-block;
     padding: 1rem;
     height: auto;
     background-color: var(--color--5);
     box-sizing: border-box;
-    grid-template-rows: auto auto auto;
 }  
 
 
@@ -184,13 +204,13 @@ div.contenedor2{
 
 
 div.contenedor2>div.c2elementos1{
-    grid-row: 1;
     display: inline-block;
     height: auto;
     width: auto;
     margin-left: 14%;
     margin-right: 14%;
     background-color: var(--color--5);
+    
 }
 
 div.contenedor2>div.c2elementos1>div.acerca-de1{
@@ -219,15 +239,17 @@ div.contenedor2>div.c2elementos1>div.acerca-de2{
 
 
 div.contenedor2>div.c2elementos2{
-    grid-row: 2;
     display: inline-block;
+    box-sizing: border-box;
     width: auto;
     height: auto;
     padding-top: 1rem;
 }
 
 div.contenedor2>div.c2elementos2>div.circulo-verde{
+    display: inline-block;
     position: absolute;
+    box-sizing: border-box;
     width: 610px;
     height: 610px;
     border-radius: 100%;
@@ -321,6 +343,62 @@ div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>h3>img{
     padding-right: 4px;
     background-color: transparent;
 }
+
+
+
+/*Objetos del tercer(3) elemento incluido este*/
+
+div.contenedor2>div.c2elementos3{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    box-sizing: border-box;
+}
+
+div.contenedor2>div.c2elementos3>div.texto1-elemento3{
+    display: inline-block;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 2rem;
+    height: auto;
+    color: var(--color--3);
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+div.contenedor2>div.c2elementos3>div.trabajos-elemento3{
+    display: flex;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 5rem;
+    justify-content: space-between;
+
+}
+
+div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>img{
+    width: 150%;
+}
+
+div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/**-------------------TERCER BLOQUE---------------------**/
+
 
 
 
