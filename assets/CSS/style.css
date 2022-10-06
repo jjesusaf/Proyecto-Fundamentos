@@ -8,6 +8,7 @@
 *{
     background-color: var(--color--5);
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -32,6 +33,7 @@ nav{
     width: auto;
     height: auto;
     background-color: var(--color--1);
+    padding: 1rem 1rem;
 }
 
 ul.barra-nav{
@@ -47,6 +49,8 @@ ul.barra-nav{
 }
 
 li.indice{
+    width: auto;
+    height: auto;
     margin-right: 1rem;
     background-color: var(--color--1);
     color: var(--color--4);
@@ -63,7 +67,48 @@ li.indice:hover{
     box-shadow: 5px 5px 20px rgb(235, 233, 233);
 }
 
-@media screen and ( max-width: 678px ){
+img.menu{
+    width: 30px;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+#menu-desplegable{
+    visibility: hidden;
+}
+
+
+/*MEDIA QUERY BARRA DE NAVEGACION-------------------------*/
+
+
+@media screen and ( max-width: 600px ){
+    
+    nav{
+        display: flex;
+        justify-content: end;
+    }
+    
+    ul.barra-nav{
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: 50px;
+        min-height: calc(100vh - 50px);
+        padding: 1.5rem 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 2;
+    }
+
+    img.menu{
+        visibility: visible;
+    }
+    
+    #menu-desplegable:checked ~ ul.barra-nav{
+        display: flex;
+    }
 
 }
 
@@ -142,6 +187,7 @@ div.c1elementos1>div.iconos>span.contorno{
 
 div.c1elementos2{
     background-color: var(--color--1);
+    box-sizing: border-box;
     display: flex;  
     height: auto;
 }
@@ -168,21 +214,95 @@ div.imagen1>img{
 }
 
 
+/*MEDIA QUERY DEL PRIMER BLOQUE---------------------------*/
+
+
 @media screen and ( max-width: 600px ){
     
     header.contenedor1{
         display: inline-block;
-        max-width: 600px;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        background-color: var(--color--1);
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+
     }
 
     div.c1elementos1{
-        max-width: 600;
+        display: inline;
+        width: auto;
+        height: auto;
         box-sizing: border-box;
         justify-content: center;
+        margin: auto;
+        padding: auto;
+        justify-content: center;
+
+
     }
 
     div.c1elementos1>p.titulo{
+        width: auto;
         text-align: center;
+        font-size: 50px;
+        margin: auto;
+        padding: auto;
+
+    }
+
+
+    div.c1elementos2{
+        display: inline;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+
+
+    }
+
+    div.c1elementos1>div.iconos{
+        width: auto;
+        padding: auto;
+        margin: auto;
+        margin-top: 1rem;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    div.circulo-verde{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: var(--color--3);
+        left: 6rem;
+        bottom: 16rem;
+    }
+
+    div.imagen1{
+        box-sizing: border-box;
+        display: inline;
+        position: relative;
+        bottom: 0rem;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        bottom: 1rem;
+        right: 4.5rem;
+        
+    }
+
+    div.imagen1>img{
+        background-color: transparent;
+        width: 50%;
+        position: relative;
+
     }
 }
 
@@ -194,6 +314,7 @@ div.imagen1>img{
 div.contenedor2{
     display: inline-block;
     padding: 1rem;
+    width: auto;
     height: auto;
     background-color: var(--color--5);
     box-sizing: border-box;
@@ -328,6 +449,7 @@ div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>h3{
 
 div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>p{
     display: inline-block;
+    width: auto;
     background-color: var(--color--1);
     padding: 5px;
     margin: 5px;
@@ -396,9 +518,88 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
 }
 
 
+/*MEDIA QUERY PARA EL SEGUNDO BLOQUE----------------------*/
+
+
+@media screen and ( max-width: 600px ){
+
+    div.contenedor2{
+        width: 100%;
+        box-sizing: border-box;
+
+    }  
+
+    div.contenedor2>div.c2elementos1{
+        width: auto;
+        box-sizing: border-box;
+        justify-content: center;
+        
+        
+    }
+
+    div.contenedor2>div.c2elementos2{
+        width: auto;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+
+    div.contenedor2>div.c2elementos2>div.circulo-verde{
+        width: 200px;
+        height: 200px;
+
+    }
+
+    div.contenedor2>div.c2elementos2>div.circulo-naranja{
+        width: 100px;
+        height: 100px;
+
+    }
+
+    div.contenedor2>div.c2elementos2>div.habilidades-el2{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad{
+        display: inline-block;
+        position: relative;
+        top: 2rem;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: transparent;
+        box-sizing: border-box;
+     }
+
+    div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div{
+        background-color: var(--color--1);
+        margin: 1rem;
+        width: auto;
+        height: auto;
+        
+    
+    }
+
+    div.contenedor2>div.c2elementos2>div.texto1-elemento2{
+        width: auto;
+        font-size: 32px;
+        bottom: 20px;
+        left: 7rem;
+        z-index: 1;
+    
+    }
+
+    div.contenedor2>div.c2elementos2>div.texto1-elemento2>p{
+        width: auto;
+        padding: auto;
+        margin: auto;
+        color: var(--color--4);
+        font-weight: bold;
+    }
+}
 
 /**-------------------TERCER BLOQUE---------------------**/
-
 
 
 
