@@ -19,6 +19,7 @@
     --color--4: #ADADAD;
     --color--5: #FFFFFF;
     --color--6: #f9f5f2;
+    --font--: font-family: 'Inter', sans-serif;
 }
 
 
@@ -49,7 +50,7 @@ ul.barra-nav{
 }
 
 li.indice{
-    width: 100%;
+    width: auto;
     height: auto;
     margin-right: 1rem;
     background-color: var(--color--1);
@@ -114,6 +115,10 @@ img.menu{
         display: flex;
     }
 
+    li.indice{
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 
@@ -283,6 +288,7 @@ div.imagen1>img{
         width: 200px;
         height: 200px;
         position: absolute;
+        box-sizing: border-box;
         border-radius: 100%;
         background-color: var(--color--3);
         left: 6rem;
@@ -473,52 +479,75 @@ div.contenedor2>div.c2elementos2>div.habilidades-el2>div.habilidad>div>h3>img{
 
 /*Objetos del tercer(3) elemento incluido este*/
 
-div.contenedor2>div.c2elementos3{
+div.c2elementos3{
     display: inline-block;
     width: 100%;
-    height: auto;
-    padding-top: 10rem;
     box-sizing: border-box;
-}
-
-div.contenedor2>div.c2elementos3>div.texto1-elemento3{
-    display: inline-block;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-bottom: 2rem;
     height: auto;
-    color: var(--color--3);
-    font-size: 40px;
-    font-family: 'Inter', sans-serif;
-   
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    margin-top: 10rem;
+    
+
 }
 
-div.contenedor2>div.c2elementos3>div.trabajos-elemento3{
+div.amazon>div, div.airbnb>div, div.google>div{
+    display: flex;
+    align-self: center;
+}
+
+div.objeto1-e3{
+    display: inline-block;
+    margin: 1rem 25%;
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    color: var(--color--3);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+div.objeto2-e3{
     display: flex;
     height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 1rem 10%;
+    justify-content: space-around;
     gap: 5rem;
-    justify-content: space-between;
-
+    
 }
 
-div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work{
+div.objeto2-e3>div{
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
-}
-
-div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>img{
-    width: 150%;
-}
-
-div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
-    width: 100%;
-    height: auto;
-    font-size: 18px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    color: var(--color--4);
     font-family: 'Inter', sans-serif;
+    
+    
 }
+
+div.text-o2-e3{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    color: var(--color--4);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+div.neg{
+    color: #000000;
+    font-weight: bold;
+}
+
+#amazon, #airbnb, #google{
+    width: 70px;
+}
+
+
 
 
 /*MEDIA QUERY PARA EL SEGUNDO BLOQUE----------------------*/
@@ -585,7 +614,7 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
         display: inline-block;
         position: relative;
         padding: .5rem 1rem;
-        top: 2rem;
+        top: 0;
         bottom: 0;
         left: 0;
         margin: auto;
@@ -619,7 +648,33 @@ div.contenedor2>div.c2elementos3>div.trabajos-elemento3>div.work>p{
         color: var(--color--4);
         font-weight: bold;
     }
+
+    div.c2elementos3{
+        margin: 0;
+    }
+
+    div.objeto1-e3{
+        margin: 1rem 1rem;
+    }
+
+    div.objeto2-e3{
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        height: auto;
+        padding: 0;
+    }
+
+    div.amazon>div, div.airbnb>div, div.google>div{
+        flex-direction: column;
+        align-content: space-between;
+        margin: 2rem 1rem;
+
+    }
+
 }
+
+
 
 /**-------------------TERCER BLOQUE---------------------**/
 
