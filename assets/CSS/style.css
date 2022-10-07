@@ -277,34 +277,34 @@ div.imagen1>img{
 
     div.c1elementos1>div.iconos{
         width: auto;
-        padding: auto;
-        margin: auto;
+        padding-bottom: 2rem;
+        margin: 10px;
         margin-top: 1rem;
         justify-content: center;
         gap: 2rem;
     }
 
     div.circulo-verde{
-        width: 200px;
-        height: 200px;
+       
+        width: 250px;
+        height: 250px;
         position: absolute;
         box-sizing: border-box;
         border-radius: 100%;
         background-color: var(--color--3);
-        left: 6rem;
-        bottom: 16rem;
+        bottom: 14rem;
+        left: 4rem;
     }
 
     div.imagen1{
         box-sizing: border-box;
         display: inline;
         position: relative;
-        bottom: 0rem;
         width: auto;
         height: auto;
         z-index: 1;
         bottom: 1rem;
-        right: 4.5rem;
+        right: 5rem;
         
     }
 
