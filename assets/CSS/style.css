@@ -285,7 +285,7 @@ div.imagen1>img{
     }
 
     div.circulo-verde{
-       
+        display: inline-block;
         width: 250px;
         height: 250px;
         position: absolute;
